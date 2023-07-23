@@ -24,23 +24,11 @@
 
 }
 
-.navList li{
+.navList Link{
   padding: 0 15px 0 15px;
-}
-
-.navList li a{
-  color: white;
   text-decoration: none;
-  float: right;
-  padding:5px;
-  border-radius: 5px;
+}
 
-}
-.navList li a:hover{
-  background:white;
-  color:black;
-  box-shadow: 3px 3px 3px rgb(205, 54, 207);
-}
 
 .navContainer img{
   width:17%; 
