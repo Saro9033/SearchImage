@@ -7,11 +7,11 @@ const imageList = (props) =>{
 
     return(
         <div>
-            {
+            
           <center> 
-          {images} 
+          {props.images.length > 0 ? {images} : "Images Not Found! Search Other images"}
           </center> 
-            }
+            
         </div>
     )
 }
