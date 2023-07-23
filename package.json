@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://Saro9033.github.io/SearchImages",
+  "homepage": "http://saro9033.github.io/SearchImage",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
