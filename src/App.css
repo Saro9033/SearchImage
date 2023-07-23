@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding:0;;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navContainer{
+  width: 100%;
   display: flex;
+  margin-top: 0%;
+  background:rgb(0, 98, 255);
+}
+.navContainer h3{
+  width:200px
+}
+
+.navList{
+  list-style:none; 
+  padding:5px; 
+  display:flex;
+  width:100%; 
+  justify-content:flex-end;
+  height: 30px;
+  align-items: center;
+
+}
+
+.navList li{
+  padding: 0 15px 0 15px;
+}
+
+.navList li a{
+  color: white;
+  text-decoration: none;
+  float: right;
+  padding:5px;
+  border-radius: 5px;
+
+}
+.navList li a:hover{
+  background:white;
+  color:black;
+  box-shadow: 3px 3px 3px rgb(205, 54, 207);
+}
+
+.navContainer img{
+  width:17%; 
+  display: flex;
+  float: left;
+  height: auto;
+}
+
+.searchContainer{
+  display: flex;
+  margin-top: 40px;
+  width: 100%;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
+
+}
+
+.SearchForm{
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(75, 70, 75, 1);
+  padding:5px;
+  border:0.5px solid black;
+  background-color: rgb(237, 245, 245);
+}
+
+.SearchForm:focus(){
+  border:none; 
+}
+.boxContainer{
+  padding:10px;
+  margin: 0 30px;
+  box-shadow:3px 4px 5px rgb(185, 179, 185); 
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-direction: column;
 }
