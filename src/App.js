@@ -1,29 +1,26 @@
 import React from 'react';
 import Home from './Components/home';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import contact from './Components/contact';
-import about from './Components/about';
+import { Route, Routes } from 'react-router-dom';
+import Contact from './Components/contact';
+import About from './Components/about';
 import './App.css'
 import Navbar from './Components/Navbar';
 
-class App extends React.Component{
-
-
-  render(){
+function App() {
+  
     return(
-      <div>
-        <BrowserRouter>
+      <>
         <Navbar/> 
         <Routes>
-        <Route path='/' Component={Home}></Route>
-        <Route path='/about' Component={about}></Route>
-        <Route path='/contact' Component={contact}></Route>
+        <Route path='/' element={<Home/>} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/contact' element={<Contact/>} />
         </Routes>
-        </BrowserRouter>
-      </div>
-    )
+       
+      </>
+    );
   }
 
-  };
+
 
 export default App;

@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "reac"
 
 const Navbar  = () =>{
 
@@ -6,11 +7,11 @@ const Navbar  = () =>{
         <div>
             <div className="navContainer"> 
               <h3>Search Images </h3>    
-                <ul className="navList">
-                <li><a href="/">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li ><a href="/contact">Contact</a></li>
-                </ul>
+                <div className="navList">
+                    <Link to="/">Home</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/contact">Contact</Link>
+                </div>
             </div>
        </div>
     )
